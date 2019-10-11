@@ -1,2 +1,11 @@
-<h1>Books#new</h1>
-<p>Find me in app/views/books/new.html.erb</p>
+<% if flash[:notice] %>
+  <p><%= flash[:notice] %></p>
+<% end %>
+
+
+<h2>Title</h2>
+<%= @book.title %>
+<h2>Body</h2>
+<%= @book.body %>
+<%= link_to "Edit", edit_book_path(@book) %>
+<%= link_to "Back", "/books" %>
