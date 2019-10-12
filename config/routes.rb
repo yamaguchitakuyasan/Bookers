@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   delete '/:id' => 'tweets#destroy'
 
+
 end
