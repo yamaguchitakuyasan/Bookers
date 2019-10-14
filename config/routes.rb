@@ -3,8 +3,6 @@ Rails.application.routes.draw do
   resources :books
 
   root 'home#index'
-
-  delete '/:id' => 'tweets#destroy'
-
-
 end
+
+
